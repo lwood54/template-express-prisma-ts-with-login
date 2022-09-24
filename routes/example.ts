@@ -1,9 +1,9 @@
 import express from "express";
-import { exampleRoute } from "../controllers/exampleController";
+import { showExampleMessage } from "../controllers/exampleController";
 
 const router = express.Router();
 
 // example route
-router.get("/", exampleRoute);
+router.get("/", showExampleMessage);
 
 export default router;
