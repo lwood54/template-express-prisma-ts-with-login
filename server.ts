@@ -18,8 +18,6 @@ app.use(logger);
 app.use("/user", userRoutes);
 app.use("/restricted-example", restricted, exampleRoutes);
 app.use("/example", exampleRoutes);
-// app.use("/bills", restricted, billsRoutes);
-// app.use("/billCategories", restricted, billCategoryRoutes);
 
 app.listen(port, () => {
   console.log(`⚡️[server]: Server is running at https://localhost:${port}`);
